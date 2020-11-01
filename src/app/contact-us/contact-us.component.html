@@ -1,40 +1,102 @@
 <br>
-<!-- <div class="container">
+
+<!-- 
+<div class="container">
     <div class="row">
-        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12"> -->
-<!-- <agm-map [latitude]="lat" [longitude]="lng" [zoom]="2">
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 pt-5">
+                    
+                    <b> <h3>  <p>Convener of ICBMI-2020</p></h3></b>
+                    <p>Dr A.M.Ballamurugan</p>
+                    <p> Department of Nanoscience and Technologies</p>
+                    <p> Bharathiar University </p>
+                    <p> +91 422 2428426</p>
+                    <p> coverner@sboai.co.in</p>
+                         
 
-    <agm-marker [latitude]="iit_delhi_lat" [longitude]="iit_delhi_lng" [iconUrl]="iit_delhi_marker"
-        (markerClick)="clickedMarker(infowindow)">
-        <agm-snazzy-info-window [maxWidth]="200"  [closeWhenOthersOpen]="true">
-            <ng-template>
-                <div (click)="onNavigate('https://home.iitd.ac.in/')" class="cursor_style"><img
-                        src="assets/images/logo/iit-delhi.png" class="img_size">
-                    <p> IIT Delhi</p>
-                </div>
-            </ng-template>
-        </agm-snazzy-info-window>
-    </agm-marker>
 
-    <agm-marker [latitude]="iit_bangalore_lat" [longitude]="iit_bangalore_lng" [iconUrl]="iit_bangalore_marker"
-    (markerClick)="clickedMarker(infowindow)">
-    <agm-snazzy-info-window [maxWidth]="200"  [closeWhenOthersOpen]="true">
-        <ng-template>
-            <div (click)="onNavigate('https://www.iisc.ac.in/')" class="cursor_style"><img
-                    src="assets/images/logo/iit-delhi.png" class="img_size">
-                <p> IISC</p>
-                <p>Bangalore</p>
             </div>
-        </ng-template>
-    </agm-snazzy-info-window>
-</agm-marker>
-
-
-</agm-map> -->
-<!--   </div>
-        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
-
         </div>
     </div>
 </div> -->
+<div class="container">
+
+    <div class="row">
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12" style="text-align: center;">
+
+            <b>
+                <h3>
+                    <p>Convener of ICBMI-2020</p>
+                </h3>
+            </b>
+            <b><span>Dr A.M.Ballamurugan</span></b>
+            <br>
+            <i> <span> Department of Nanoscience and Technologies</span>
+                <br>
+                <span> Bharathiar University </span>
+                <br>
+                <span> +91 422 2428426</span>
+
+                <br>
+
+                <span> coverner@sboai.co.in</span>
+            </i>
+        </div>
+
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12" style="text-align: center;">
+            <b>
+                <h3>Geo Locations</h3>
+            </b>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+            <agm-map [latitude]="center_lat" [longitude]="center_lng" [zoom]="4">
+
+
+
+                <agm-marker class="img_size" *ngFor="let data of marker_data" [latitude]="data.lat"
+                    [longitude]="data.lng" [iconUrl]="data.marker_icon">
+                    <agm-snazzy-info-window [maxWidth]="200" [closeWhenOthersOpen]="true">
+                        <ng-template>
+                            <div (click)="onNavigate(data.website)" class="cursor_style"><span> <img
+                                        src="{{ data.official_icon }}" class="img_size"> </span>
+                                <br>
+                                <span> {{ data.nickname }}</span>
+                                <span> {{  data.city }}</span>
+
+                            </div>
+                        </ng-template>
+                    </agm-snazzy-info-window>
+                </agm-marker>
+
+
+
+            </agm-map>
+        </div>
+        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+            <table class="table table-striped">
+                <thead>
+                    <th>Pointer</th>
+                    <th>Name</th>
+                    <th>City</th>
+
+                </thead>
+
+                <tr *ngFor="let tab_data of marker_data">
+                    <td><img src="{{tab_data.marker_icon}}"></td>
+                    <td>{{ tab_data.title}}</td>
+                    <td>{{ tab_data.city}}</td>
+
+                </tr>
+
+            </table>
+        </div>
+    </div>
+</div>
 <br>

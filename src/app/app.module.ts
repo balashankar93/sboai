@@ -20,8 +20,10 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { AwardUniversityComponent } from './award-university/award-university.component';
 import { SbaoiAwardComponent } from './sbaoi-award/sbaoi-award.component';
 import { ChandraAwardComponent } from './chandra-award/chandra-award.component';
+import { AgmCoreModule } from '@agm/core';
+
 //import { AgmCoreModule } from '@agm/core';
-//import { AgmSnazzyInfoWindowModule } from '@agm/snazzy-info-window';
+import { AgmSnazzyInfoWindowModule } from '@agm/snazzy-info-window';
 @NgModule({
   declarations: [
     AppComponent,
@@ -46,11 +48,13 @@ import { ChandraAwardComponent } from './chandra-award/chandra-award.component';
     BrowserModule,
     AppRoutingModule,
     FontAwesomeModule,
-  /*   AgmCoreModule.forRoot({
-     apiKey: 'AIzaSyCFtn7jtqOoo77OUXlP2y4Ukj4Nfv_-cKY'
+     AgmCoreModule.forRoot({
+    // apiKey: 'AIzaSyCFtn7jtqOoo77OUXlP2y4Ukj4Nfv_-cKY'
+    apiKey:'AIzaSyDbiqG-oOua70fAUWWcAQpG16uJnHumZ-0'
    }),
    AgmSnazzyInfoWindowModule 
-   */],
+  
+ ],
   providers: [],
   bootstrap: [AppComponent]
 })

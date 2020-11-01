@@ -1,13 +1,22 @@
 agm-map {
-    height: 300px;
+    height: 500px;
+
   }
 
   .img_size{
 
-    width: 45px; 
-    height: 45px;
+    width: 50px; 
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
   }
   
   .cursor_style{
     cursor: pointer
+  }
+
+  agm-snazzy-info-window{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
   }

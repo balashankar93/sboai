@@ -31,7 +31,9 @@
                             "./node_modules/bootstrap/dist/css/bootstrap.min.css",
                             "./node_modules/popper.js/dist/umd/popper.min.js",
                             "src/styles.scss",
-                            "node_modules/flag-icon-css/css/flag-icon.min.css"
+                            "node_modules/flag-icon-css/css/flag-icon.min.css",
+                            "node_modules/snazzy-info-window/dist/snazzy-info-window.css"
+
                         ],
                         "scripts": [
                             "./node_modules/jquery/dist/jquery.min.js",
