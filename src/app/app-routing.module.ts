@@ -17,86 +17,92 @@ import { AwardUniversityComponent } from './award-university/award-university.co
 import { SbaoiAwardComponent } from './sbaoi-award/sbaoi-award.component';
 import { ChandraAwardComponent } from './chandra-award/chandra-award.component';
 import { ScheduleComponent } from './schedule/schedule.component';
+import { BskComponent } from './bsk/bsk.component';
+
 
 
 
 const routes: Routes = [
-  
-  { path: '',
+
+  {
+    path: '',
     redirectTo: '/home',
     pathMatch: 'full'
   },
-  
+
   {
-  path:"home",
-  component:HomeComponent
-},
-{
-  path:"contact-us",
-  component:ContactUsComponent,
-},
-{
-  path:"award",
-  component:AwardComponent,
-},
-{
-  path:"committee",
-  component:CommitteeComponent,
-},
-{   path:"htmlExample",
-    component:HtmlExampleComponent
-},
+    path: "home",
+    component: HomeComponent
+  },
+  {
+    path: "contact-us",
+    component: ContactUsComponent,
+  },
+  {
+    path: "award",
+    component: AwardComponent,
+  },
+  {
+    path: "committee",
+    component: CommitteeComponent,
+  },
+  {
+    path: "htmlExample",
+    component: HtmlExampleComponent
+  },
 
- {
-      path:"award-university",
-      component:AwardUniversityComponent
-},
-{
-  path:"sbaoi-award",
-  component:SbaoiAwardComponent,
-},
-{
-  path:"schedule",
-  component:ScheduleComponent,
-},
-    {   path:"chandra-award",
-    component:ChandraAwardComponent
-},
-{
-  path:"cssPage",
-  component:CssPageComponent
-},
-{
-      path:"javascriptPage",
-      component:JavascriptPageComponent
-},
-{
-  path:"program",
-  component:ProgramComponent,
-},
-{
-  path:"speaker",
-  component:SpeakerComponent,
-},
+  {
+    path: "award-university",
+    component: AwardUniversityComponent
+  },
+  {
+    path: "sbaoi-award",
+    component: SbaoiAwardComponent,
+  },
+  {
+    path: "schedule",
+    component: ScheduleComponent,
+  },
+  {
+    path: "chandra-award",
+    component: ChandraAwardComponent
+  },
+  {
+    path: "cssPage",
+    component: CssPageComponent
+  },
+  {
+    path: "javascriptPage",
+    component: JavascriptPageComponent
+  },
+  {
+    path: "program",
+    component: ProgramComponent,
+  },
+  {
+    path: "speaker",
+    component: SpeakerComponent,
+  },
 
-{
-  path:"register",
-  component:RegisterComponent,
-},
-{
-  path:"abstract",
-  component:AbstractComponent,
-},
-{
-  path:"about-us",
-  component:AboutUsComponent,
-  // children:[
-  //   {
-  //     path:"wrongPswd",
-  //     component:WrongPswdComponent
-  //   }
-  // ]
-},
+  {
+    path: "register",
+    component: RegisterComponent,
+  },
+  {
+    path: "abstract",
+    component: AbstractComponent,
+  },
+ 
+  {
+    path: "about-us",
+    component: AboutUsComponent,
+    // children:[
+    //   {
+    //     path:"wrongPswd",
+    //     component:WrongPswdComponent
+    //   }
+    // ]
+  },
 ];
 
 @NgModule({

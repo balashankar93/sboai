@@ -26,6 +26,7 @@ import { ScheduleComponent } from './schedule/schedule.component';
 
 //import { AgmCoreModule } from '@agm/core';
 import { AgmSnazzyInfoWindowModule } from '@agm/snazzy-info-window';
+import { BskComponent } from './bsk/bsk.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -45,7 +46,8 @@ import { AgmSnazzyInfoWindowModule } from '@agm/snazzy-info-window';
     AwardUniversityComponent,
     SbaoiAwardComponent,
     ChandraAwardComponent,
-    ScheduleComponent
+    ScheduleComponent,
+    BskComponent
   ],
   imports: [
     BrowserModule,

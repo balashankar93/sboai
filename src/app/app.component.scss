@@ -10,7 +10,30 @@ body {
     font-family: Arial, "Helvetica Neue", Arial, Helvetica, sans-serif;
 }
 
-          
+footer{
+    background-color: black;
+    position: relative;
+    left:0;
+    bottom:0;
+    color:white;
+}
+
+.logo-text{
+    font-size: 25px;
+    color:black !important;
+    font-weight: bold;
+    padding:0 5px 0 5px;
+}
+
+
+
+.active-link{
+    background-color: lightgrey;
+    color: blue;
+    border-radius: 0.75rem;
+    }
+
+ /*          
 nav{
     background-color: #87CEFA;
         ul {
@@ -58,13 +81,7 @@ nav{
     height: 10%;
 }
 
-footer{
-    background-color: black;
-    position: relative;
-    left:0;
-    bottom:0;
-    color:white;
-}
+
 
 
 .dropdown-menu{
@@ -72,12 +89,7 @@ footer{
     z-index:500;
 }
 
-.logo-text{
-    font-size: 25px;
-    color:black !important;
-    font-weight: bold;
-    padding:0 5px 0 5px;
-}
+
 
 
 .align-vertical{
@@ -113,3 +125,4 @@ footer{
     }
   }
 
+ */

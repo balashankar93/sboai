@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router, NavigationEnd } from '@angular/router';
+
 
 @Component({
   selector: 'app-sbaoi-award',
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SbaoiAwardComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
+  }
+
+  onRedirect(){
+    this.router.navigate(['/chandra-award'])
+
   }
 
 }
