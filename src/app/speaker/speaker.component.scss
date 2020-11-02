@@ -11,6 +11,12 @@
     animation-duration:4s;
   }
 
+  .speaker-headings{
+    position: relative;
+    animation-name: cardexample;
+    animation-duration:4s; 
+  }
+
   @keyframes cardexample {
     0%   {left:0px; top:100px;}
     75%  {left:0px; top:0px;}

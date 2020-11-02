@@ -21,6 +21,7 @@ import { AwardUniversityComponent } from './award-university/award-university.co
 import { SbaoiAwardComponent } from './sbaoi-award/sbaoi-award.component';
 import { ChandraAwardComponent } from './chandra-award/chandra-award.component';
 import { AgmCoreModule } from '@agm/core';
+import { ScheduleComponent } from './schedule/schedule.component';
 
 //import { AgmCoreModule } from '@agm/core';
 import { AgmSnazzyInfoWindowModule } from '@agm/snazzy-info-window';
@@ -42,7 +43,8 @@ import { AgmSnazzyInfoWindowModule } from '@agm/snazzy-info-window';
     RegisterComponent,
     AwardUniversityComponent,
     SbaoiAwardComponent,
-    ChandraAwardComponent
+    ChandraAwardComponent,
+    ScheduleComponent
   ],
   imports: [
     BrowserModule,

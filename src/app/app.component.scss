@@ -39,12 +39,13 @@ nav{
     }
 
    
-    .highlight:hover{
-                a{
-                    background-color: black;
+    .highlight{
+                a:hover{
+                    // background-color:;
                     padding:7px;
-                    color:blue !important;
+                    color:indigo !important;
                 }
+                
             }
    
 
@@ -85,3 +86,30 @@ footer{
     display: flex;
     justify-content: center;
 }
+
+.highlight .icon {
+    display: none;
+  }
+
+  @media screen and (max-width: 600px) {
+    .highlight a:not(:first-child) {display: none;}
+    .highlight a.icon {
+      float: right;
+      display: block;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .highlight.responsive {position: relative;}
+    .highlight.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .highlight.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+

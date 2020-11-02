@@ -16,6 +16,7 @@ import { RegisterComponent } from './register/register.component';
 import { AwardUniversityComponent } from './award-university/award-university.component';
 import { SbaoiAwardComponent } from './sbaoi-award/sbaoi-award.component';
 import { ChandraAwardComponent } from './chandra-award/chandra-award.component';
+import { ScheduleComponent } from './schedule/schedule.component';
 
 
 
@@ -53,6 +54,10 @@ const routes: Routes = [
 {
   path:"sbaoi-award",
   component:SbaoiAwardComponent,
+},
+{
+  path:"schedule",
+  component:ScheduleComponent,
 },
     {   path:"chandra-award",
     component:ChandraAwardComponent
