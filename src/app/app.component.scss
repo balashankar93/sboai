@@ -25,12 +25,14 @@ footer{
     // padding:0 1px 0 1px;
 }
 
-
+.nav-background{
+    background-color: #01d8e7
+}
 
 .nav-active:hover {
     a{
-        background-color: darkgray;
-        color: blue;
+        background-color: white;
+        color: black !important;
         border-radius: 0.75rem;
     }
    
@@ -49,18 +51,23 @@ nav{
 
 .dropdown-item{
     color:black !important;
-    
     background: none !important;
 }
 
 .dropdown-item:hover{
-        
-    background-color:lightgreen !important;
-    border-radius: 30px;
+   
+    
+    background-color:rgb(183, 213, 220) !important;
+    color:white !important; 
+    border-radius: 20px;
 }
 
 .navbar-toggler-icon{
     color:white!important;
+}
+
+.dropdown-item{
+    text-align: center;
 }
 
            

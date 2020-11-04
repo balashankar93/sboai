@@ -92,6 +92,11 @@ const routes: Routes = [
     path: "abstract",
     component: AbstractComponent,
   },
+
+  {
+    path: "publisher",
+    component: BskComponent,
+  },
  
   {
     path: "about-us",

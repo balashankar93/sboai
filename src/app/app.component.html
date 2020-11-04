@@ -65,10 +65,16 @@
   </nav> -->
 
 
-  <nav class="navbar navbar-expand-lg sticky-top navbar-dark justify-content-between" style="background-color: #87CEFA;">
-    <a (click)="onNavigate('http://www.sbaoi.org/new/index.htm')" style="cursor: pointer;"><img alt="" src="assets\images\logo\sboai.png"></a>
+  <nav class="navbar navbar-expand-lg sticky-top navbar-dark justify-content-between nav-background" >
+
+    <!-- assets\images\logo\sboai.png-->
+
+    
+    <a (click)="onNavigate('http://www.sbaoi.org/new/index.htm')" style="cursor: pointer;"><img alt="" style="height: 75px;" src="assets/images/organizer/sboai_old.png"></a>
             <a class="logo-text" >ICBMI - 2020</a>
-            <a (click)="onNavigate('http://www.sbaoi.org/new/index.htm')" style="cursor: pointer;"><img alt="" src="assets\images\logo\stermi.png"></a>
+            <!-- <a (click)="onNavigate('http://www.sbaoi.org/new/index.htm')" style="cursor: pointer;"><img alt="" src="assets\images\logo\stermi.png"></a> -->
+
+            <a (click)="onNavigate('http://www.sbaoi.org/new/index.htm')" style="cursor: pointer;"><img alt="" style="height: 60px;" src="assets/images/organizer/stermi.png"></a>
       
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -125,6 +131,10 @@
 
         <li class="nav-item nav-active">
           <a class="nav-link" routerLink="register" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }">Registration<span class="sr-only">(current)</span></a>
+        </li>
+
+        <li class="nav-item nav-active">
+          <a class="nav-link" routerLink="publisher" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }">Publishers<span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item nav-active">
           <a class="nav-link" routerLink="contact-us" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }">Contact <span class="sr-only">(current)</span></a>
