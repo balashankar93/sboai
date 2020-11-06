@@ -24,7 +24,6 @@ import { AgmCoreModule } from '@agm/core';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { ScheduleComponent } from './schedule/schedule.component';
 
-//import { AgmCoreModule } from '@agm/core';
 import { AgmSnazzyInfoWindowModule } from '@agm/snazzy-info-window';
 import { BskComponent } from './bsk/bsk.component';
 @NgModule({
@@ -52,11 +51,12 @@ import { BskComponent } from './bsk/bsk.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FontAwesomeModule,
+    FontAwesomeModule,  
      AgmCoreModule.forRoot({
-    // apiKey: 'AIzaSyCFtn7jtqOoo77OUXlP2y4Ukj4Nfv_-cKY'
-    apiKey:'AIzaSyDbiqG-oOua70fAUWWcAQpG16uJnHumZ-0'
-   }),
+      apiKey: 'AIzaSyCFtn7jtqOoo77OUXlP2y4Ukj4Nfv_-cKY'
+     //apiKey:'AIzaSyDbiqG-oOua70fAUWWcAQpG16uJnHumZ-0'
+    }),
+  
    AgmSnazzyInfoWindowModule 
   
  ],

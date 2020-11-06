@@ -15,7 +15,30 @@ center_lng =80.899625;
 
 marker_data : any = 
   
-  [
+  [ 
+    
+    {
+    title : "Bharathiar University",
+    website:'https://www.b-u.ac.in/',
+    lat : 11.039853,
+    lng :76.879086,
+    official_icon : 'assets/images/links/bu.png',
+    marker_icon : 'assets/images/map_marker/green-dot.png',
+    nickname: "Bu",
+    city: "Coimbatore"
+  }, 
+
+  {
+    title : "University of Madras",
+    website:'https://www.unom.ac.in/',
+    lat : 13.066111,
+    lng :80.282707,
+    official_icon : 'assets/images/links/unom.png',
+    marker_icon : 'assets/images/map_marker/purple-dot.png',
+    nickname: "Unom",
+    city: "Chennai"
+  },
+
 
   {
     title : "Indian Institute of Science",
@@ -28,16 +51,7 @@ marker_data : any =
     city: "Bangalore"
   },
 
-  {
-    title : "Bharathiar University",
-    website:'https://www.b-u.ac.in/',
-    lat : 11.039853,
-    lng :76.879086,
-    official_icon : 'assets/images/links/bu.png',
-    marker_icon : 'assets/images/map_marker/green-dot.png',
-    nickname: "Bu",
-    city: "Coimbatore"
-  }, 
+ 
 
   {
     title : "Indian Institude of Technology",
@@ -59,18 +73,9 @@ marker_data : any =
     marker_icon : 'assets/images/map_marker/blue-dot.png',
     nickname: "IIT",
     city: "Guwahati"
-  },
+  }
 
-  {
-    title : "University of Madras",
-    website:'https://www.unom.ac.in/',
-    lat : 13.066111,
-    lng :80.282707,
-    official_icon : 'assets/images/links/unom.png',
-    marker_icon : 'assets/images/map_marker/purple-dot.png',
-    nickname: "Unom",
-    city: "Chennai"
-  } 
+
 
 
 ];
