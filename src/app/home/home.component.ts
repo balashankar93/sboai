@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router, NavigationEnd } from '@angular/router';
+
 
 @Component({
   selector: 'app-home',
@@ -8,7 +10,7 @@ import { Component, OnInit } from '@angular/core';
 export class HomeComponent implements OnInit {
   homeimg:string="../assets/images/edu1.jpg";
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
@@ -18,5 +20,12 @@ export class HomeComponent implements OnInit {
    // const url = 'https://zfrmz.in/0F2AEQXcnTMiQhqLJvcj';
     window.open(url, '_blank');
 }
+
+onRedirect(){
+  this.router.navigate(['/register'])
+
+}
+
+
 
 }
