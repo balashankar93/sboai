@@ -13,6 +13,8 @@ export class HomeComponent implements OnInit {
   constructor(private router: Router) { }
 
   ngOnInit() {
+
+    alert("Abstract submission date has been extended...");
   }
 
   onNavigate(url){
