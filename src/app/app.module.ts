@@ -26,6 +26,12 @@ import { ScheduleComponent } from './schedule/schedule.component';
 
 import { AgmSnazzyInfoWindowModule } from '@agm/snazzy-info-window';
 import { BskComponent } from './bsk/bsk.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { MatButtonModule } from '@angular/material/button';
+import { MatDialogModule } from '@angular/material/dialog';
+import { BootstrapModalComponent } from './bootstrap-modal/bootstrap-modal.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -46,21 +52,28 @@ import { BskComponent } from './bsk/bsk.component';
     SbaoiAwardComponent,
     ChandraAwardComponent,
     ScheduleComponent,
-    BskComponent
+    BskComponent,
+    BootstrapModalComponent,
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    MatButtonModule,
+    MatDialogModule,
     FontAwesomeModule,  
      AgmCoreModule.forRoot({
       apiKey: 'AIzaSyCFtn7jtqOoo77OUXlP2y4Ukj4Nfv_-cKY'
      //apiKey:'AIzaSyDbiqG-oOua70fAUWWcAQpG16uJnHumZ-0'
     }),
   
-   AgmSnazzyInfoWindowModule 
+   AgmSnazzyInfoWindowModule,
+  
+   BrowserAnimationsModule 
   
  ],
   providers: [ {provide: LocationStrategy, useClass: HashLocationStrategy}],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [BootstrapModalComponent]
 })
 export class AppModule { }
