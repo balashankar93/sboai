@@ -19,6 +19,9 @@ import { ChandraAwardComponent } from './chandra-award/chandra-award.component';
 import { ScheduleComponent } from './schedule/schedule.component';
 import { BskComponent } from './bsk/bsk.component';
 
+import { PosterComponent } from './poster/poster.component';
+
+
 
 
 
@@ -30,6 +33,10 @@ const routes: Routes = [
     pathMatch: 'full'
   },
 
+  /* {
+    path: "poster",
+    component: PosterComponent
+  }, */
   {
     path: "home",
     component: HomeComponent
@@ -111,7 +118,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes,{ scrollPositionRestoration: 'enabled' })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
