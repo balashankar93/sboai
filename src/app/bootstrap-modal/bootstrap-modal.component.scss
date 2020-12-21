@@ -3,7 +3,11 @@
  p{
     text-align: justify;
   }
-
+  .back_image{
+   /*  background-image:url("../../assets/images/poster/a3.jpg");
+    max-width: 100%;
+    height: 800px; */
+  }
 
   .dis{
       z-index: 10000;
@@ -12,3 +16,5 @@
   .text_space{
     text-indent: 50px;
 }
+
+

@@ -32,6 +32,8 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatDialogModule } from '@angular/material/dialog';
 import { BootstrapModalComponent } from './bootstrap-modal/bootstrap-modal.component';
 import { PosterComponent } from './poster/poster.component';
+import { OralPresentationComponent } from './oral-presentation/oral-presentation.component';
+import { PostalPresentationComponent } from './postal-presentation/postal-presentation.component';
 
 @NgModule({
   declarations: [
@@ -56,6 +58,8 @@ import { PosterComponent } from './poster/poster.component';
     BskComponent,
     BootstrapModalComponent,
     PosterComponent,
+    OralPresentationComponent,
+    PostalPresentationComponent,
     
   ],
   imports: [
@@ -65,7 +69,9 @@ import { PosterComponent } from './poster/poster.component';
     MatDialogModule,
     FontAwesomeModule,  
      AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyCFtn7jtqOoo77OUXlP2y4Ukj4Nfv_-cKY'
+      apiKey: 'AIzaSyCFtn7jtqOoo77OUXlkj4Nfv_-cKY'
+      //      apiKey: 'AIzaSyCFtn7jtqOoo77OUXlP2y4Ukj4Nfv_-cKY'
+
      //apiKey:'AIzaSyDbiqG-oOua70fAUWWcAQpG16uJnHumZ-0'
     }),
   

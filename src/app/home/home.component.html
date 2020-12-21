@@ -11,7 +11,7 @@
                         </b>
                     </h1>
 
-                    <h4 class="pt-2">30th SBAOI ANNUAL MEETING & 13th STERMI ANNUAL MEETING</h4>
+                    <h4 class="pt-2">30th SBAOI ANNUAL MEETING & 12th STERMI ANNUAL MEETING</h4>
                     <h4 class="pt-2">DECEMBER 06 to 09, 2020 -VIRTUAL CONFERENCE</h4>
                     <a (click)="onNavigate('http://www.sbaoi.org/new/index.htm')" style="cursor: pointer;">
 
@@ -24,35 +24,83 @@
 
                    
                     <div class="home-border col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                        <!-- <h5 class="home-abstract p-2"><marquee behavior="scroll" direction="left" scrollamount="9">   Abstract Submission Before, 15th Nov 2020  |  Conference Date 06 to 09 Dec 2020 </marquee></h5> -->
 
-                        <div class="row">
-                         
+
+
+                      <div class="row" style="cursor: pointer;" >
                             <div class="col-xl-4 col-lg-4 col-md-3 col-sm-3"
-                                (click)="onNavigate('https://zfrmz.in/0F2AEQXcnTMiQhqLJvcj')" style="cursor: pointer;">
+                            (click)="onNavigate('http://52.188.202.97/portals/account/login')" >
                                 <h5 class="home-abstract p-2">
-                                    ABSTRACT SUBMISSION
-                                    <div class="blink_me">
-                                    <b>Before, 25'th Nov 2020</b>
+                                    
+                                    Click Here To
+                                    <div class="blink_me1" >
+                                    <b style="color: royalblue;">Sign Up/Log In </b>
                                     </div>
                                 </h5>
                             </div>
                             <div class="col-xl-4 col-lg-4 col-md-3 col-sm-3">
                                 <h5 class="home-abstract p-2">
                                     CONFERENCE DATE
-                                    <div class="blink_me">
-                                      <b>  06 to 09 Dec 2020</b>
+                                    <div class="blink_me1">
+                                      <b style="color: royalblue;">  06 to 09 Dec 2020</b>
                                     </div>
                                 </h5>
                             </div>
-                            <div class="col-xl-4 col-lg-4 col-md-3 col-sm-3 b-1" (click)="onRedirect()" style="cursor:pointer" >
+                           <!--  <div class="col-xl-4 col-lg-4 col-md-3 col-sm-3 b-1" (click)="onNavigate('http://52.188.202.97/portals/')" style="cursor:pointer" >
                                 <h5 class="home-abstract p-2">
-                                    Click Here
-                                    <div class="blink_me" >
-                                      <b> Register Now</b>
+                                    Click Here To
+                                    <div class="blink_me1" >
+                                      <b style="color: royalblue;"> Sign Up </b>
 
                                     </div>
                                 </h5>
+                            </div> -->
+
+                            <div class="col-xl-4 col-lg-4 col-md-3 col-sm-3"
+                            (click)="downloadFile('./assets/files/Abstracts_book.pdf','Abstracts_book.pdf')" >
+                                <h6 class="home-abstract p-2">
+                                    
+                                  Download <i class="fa fa-download" style="color: #0f9ad2;"></i>
+                                    <div class="blink_me" >
+                                    <b> Abstract Book  </b>
+                                    </div>
+                                </h6>
+                            </div>
+                        </div> 
+
+
+
+                        <div class="row" style="cursor: pointer;" >
+                            <div class="col-xl-4 col-lg-4 col-md-3 col-sm-3"
+                            (click)="downloadFile('./assets/files/BEST_ORAL_PRESENTATION_AWARD.pdf','BEST_ORAL_PRESENTATION_AWARD.pdf')" >
+                                <h6 class="home-abstract p-2">
+                                    
+                                  Download <i class="fa fa-download" style="color: #0f9ad2;"></i>
+                                    <div class="blink_me" >
+                                    <b> BEST ORAL PRESENTATION AWARD   </b>
+                                    </div>
+                                </h6>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-3 col-sm-3"  (click)="downloadFile('./assets/files/BEST_RESEARCHER_AWARD.pdf','BEST_RESEARCHER_AWARD.pdf')">
+                                <h6 class="home-abstract p-2">
+                                    Download <i class="fa fa-download" style="color: #0f9ad2;"></i>
+
+                                    <br>
+                                    <div class="blink_me">
+                                      <b> BEST RESEARCHER AWARD</b>
+                                    
+                                    </div>
+                                </h6>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-3 col-sm-3 b-1"  (click)="downloadFile('./assets/files/BEST_POSTER_PRESENTATION_AWARD.pdf','BEST_POSTER_PRESENTATION_AWARD.pdf')" style="cursor:pointer" >
+                                <h6 class="home-abstract p-2">
+                                    Download <i class="fa fa-download" style="color: #0f9ad2;"></i>
+                                    <br>
+                                    <div class="blink_me" >
+                                      <b>BEST POSTER PRESENTATION AWARD </b>
+
+                                    </div>
+                                </h6>
                             </div>
                         </div>
 

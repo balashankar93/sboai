@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
 import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
 import { BootstrapModalComponent } from '../bootstrap-modal/bootstrap-modal.component';
+import * as FileSaver from 'file-saver';
 
 
 @Component({
@@ -21,7 +22,9 @@ export class HomeComponent implements OnInit {
   }
 
  
-
+  downloadFile(fileUrl: string, fileName: string) {
+    FileSaver.saveAs(fileUrl, fileName);
+  }
 
   openModal() {
     const dialogConfig = new MatDialogConfig();
@@ -30,8 +33,11 @@ export class HomeComponent implements OnInit {
     dialogConfig.id = "modal-component";
    /*  dialogConfig.height = "55%";
     dialogConfig.width = "50%"; */
-    dialogConfig.height = "460px";
+  /*   dialogConfig.height = "460px";
+    dialogConfig.width = "600px"; */
+    dialogConfig.height = "500px";
     dialogConfig.width = "600px";
+   
     // https://material.angular.io/components/dialog/overview
     const modalDialog = this.matDialog.open(BootstrapModalComponent, dialogConfig);
   }

@@ -22,7 +22,8 @@ import { BskComponent } from './bsk/bsk.component';
 import { PosterComponent } from './poster/poster.component';
 
 
-
+import {  PostalPresentationComponent } from './postal-presentation/postal-presentation.component';
+import { OralPresentationComponent } from './oral-presentation/oral-presentation.component';
 
 
 const routes: Routes = [
@@ -33,10 +34,10 @@ const routes: Routes = [
     pathMatch: 'full'
   },
 
-  /* {
+ {
     path: "poster",
     component: PosterComponent
-  }, */
+  }, 
   {
     path: "home",
     component: HomeComponent
@@ -49,6 +50,16 @@ const routes: Routes = [
     path: "award",
     component: AwardComponent,
   },
+
+  {
+    path: "oral-presentation",
+    component: OralPresentationComponent,
+  },
+  {
+    path: "postal-presentation",
+    component: PostalPresentationComponent,
+  },
+
   {
     path: "committee",
     component: CommitteeComponent,

@@ -12,12 +12,25 @@ export class PosterComponent implements OnInit {
   constructor(private router: Router) { }
 
   ngOnInit() {
+
+  //  document.querySelector('body').classList.add('login');
+
+
   }
 
   
 onRedirect(){
   this.router.navigate(['/home'])
 
+}
+
+ngAfterViewInit() {
+
+  console.log("ghgh");
+}
+
+ngOnDestroy() {
+ // document.querySelector('body').classList.remove('login');
 }
 
 }

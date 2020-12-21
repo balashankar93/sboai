@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import * as FileSaver from 'file-saver';
+
 
 @Component({
   selector: 'app-schedule',
@@ -9,6 +11,11 @@ export class ScheduleComponent implements OnInit {
 
   constructor() {
    }
+
+
+  downloadFile(fileUrl: string, fileName: string) {
+    FileSaver.saveAs(fileUrl, fileName);
+  }
  
    dec_6 : any =[
      {
