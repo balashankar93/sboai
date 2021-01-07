@@ -92,6 +92,7 @@
         <li class="nav-item nav-active">
           <a class="nav-link" routerLink="abstract" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }">Abstract <span class="sr-only">(current)</span></a>
         </li>
+        
 
         <li class="nav-item dropdown nav-active">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
@@ -143,9 +144,21 @@
           <a class="nav-link" routerLink="register" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }">Registration<span class="sr-only">(current)</span></a>
         </li>
 
-        <li class="nav-item nav-active">
+       <!--  <li class="nav-item nav-active">
           <a class="nav-link" routerLink="publisher" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }">Publishers<span class="sr-only">(current)</span></a>
+        </li> -->
+        <li class="nav-item dropdown nav-active">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Papers
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" routerLink="publisher">Publisher</a>
+            <a class="dropdown-item" routerLink="call-papers">Call for Papers</a>
+          </div>
         </li>
+
+
         <li class="nav-item nav-active">
           <a class="nav-link" routerLink="contact-us" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }">Contact <span class="sr-only">(current)</span></a>
         </li>

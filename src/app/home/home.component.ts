@@ -35,7 +35,7 @@ export class HomeComponent implements OnInit {
     dialogConfig.width = "50%"; */
   /*   dialogConfig.height = "460px";
     dialogConfig.width = "600px"; */
-    dialogConfig.height = "500px";
+    dialogConfig.height = "300px";
     dialogConfig.width = "600px";
    
     // https://material.angular.io/components/dialog/overview
@@ -53,6 +53,11 @@ export class HomeComponent implements OnInit {
 
 onRedirect(){
   this.router.navigate(['/register'])
+
+}
+
+onRedirectCallPapers(){
+  this.router.navigate(['/call-papers'])
 
 }
 

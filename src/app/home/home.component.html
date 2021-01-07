@@ -28,6 +28,17 @@
 
 
                       <div class="row" style="cursor: pointer;" >
+
+                        <div class="col-xl-4 col-lg-4 col-md-3 col-sm-3"
+                        (click)="downloadFile('./assets/files/Abstracts_book.pdf','Abstracts_book.pdf')" >
+                            <h5 class="home-abstract p-2">
+                                
+                              Download <i class="fa fa-download" style="color: #0f9ad2;"></i>
+                                <div class="blink_me" >
+                                <b> Abstract Book  </b>
+                                </div>
+                            </h5>
+                        </div>
                             <div class="col-xl-4 col-lg-4 col-md-3 col-sm-3"
                             (click)="onNavigate('http://52.188.202.97/portals/account/login')" >
                                 <h5 class="home-abstract p-2">
@@ -38,13 +49,25 @@
                                     </div>
                                 </h5>
                             </div>
+
+                          
                             <div class="col-xl-4 col-lg-4 col-md-3 col-sm-3">
-                                <h5 class="home-abstract p-2">
+                              <!--   <h5 class="home-abstract p-2">
                                     CONFERENCE DATE
                                     <div class="blink_me1">
                                       <b style="color: royalblue;">  06 to 09 Dec 2020</b>
                                     </div>
+                                </h5> -->
+
+
+                                <h5 class="home-abstract p-2" style="cursor:pointer" (click)="onRedirectCallPapers()">
+                                    Trends Manuscript submission
+                                    <div class="blink_me">Click Here
+                                        <i class="fa fa-arrow-right" style="color: #0f9ad2;"></i>
+                                    </div>
                                 </h5>
+
+                               
                             </div>
                            <!--  <div class="col-xl-4 col-lg-4 col-md-3 col-sm-3 b-1" (click)="onNavigate('http://52.188.202.97/portals/')" style="cursor:pointer" >
                                 <h5 class="home-abstract p-2">
@@ -56,21 +79,12 @@
                                 </h5>
                             </div> -->
 
-                            <div class="col-xl-4 col-lg-4 col-md-3 col-sm-3"
-                            (click)="downloadFile('./assets/files/Abstracts_book.pdf','Abstracts_book.pdf')" >
-                                <h6 class="home-abstract p-2">
-                                    
-                                  Download <i class="fa fa-download" style="color: #0f9ad2;"></i>
-                                    <div class="blink_me" >
-                                    <b> Abstract Book  </b>
-                                    </div>
-                                </h6>
-                            </div>
+                        
                         </div> 
 
 
 
-                        <div class="row" style="cursor: pointer;" >
+                      <!--   <div class="row" style="cursor: pointer;" >
                             <div class="col-xl-4 col-lg-4 col-md-3 col-sm-3"
                             (click)="downloadFile('./assets/files/BEST_ORAL_PRESENTATION_AWARD.pdf','BEST_ORAL_PRESENTATION_AWARD.pdf')" >
                                 <h6 class="home-abstract p-2">
@@ -102,7 +116,7 @@
                                     </div>
                                 </h6>
                             </div>
-                        </div>
+                        </div> -->
 
                         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 pt-3">
                             <b>

@@ -34,6 +34,7 @@ import { BootstrapModalComponent } from './bootstrap-modal/bootstrap-modal.compo
 import { PosterComponent } from './poster/poster.component';
 import { OralPresentationComponent } from './oral-presentation/oral-presentation.component';
 import { PostalPresentationComponent } from './postal-presentation/postal-presentation.component';
+import { CallPapersComponent } from './call-papers/call-papers.component';
 
 @NgModule({
   declarations: [
@@ -60,6 +61,7 @@ import { PostalPresentationComponent } from './postal-presentation/postal-presen
     PosterComponent,
     OralPresentationComponent,
     PostalPresentationComponent,
+    CallPapersComponent,
     
   ],
   imports: [

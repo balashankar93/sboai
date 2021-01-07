@@ -18,6 +18,7 @@ import { SbaoiAwardComponent } from './sbaoi-award/sbaoi-award.component';
 import { ChandraAwardComponent } from './chandra-award/chandra-award.component';
 import { ScheduleComponent } from './schedule/schedule.component';
 import { BskComponent } from './bsk/bsk.component';
+import { CallPapersComponent } from './call-papers/call-papers.component';
 
 import { PosterComponent } from './poster/poster.component';
 
@@ -115,7 +116,10 @@ const routes: Routes = [
     path: "publisher",
     component: BskComponent,
   },
- 
+  {
+    path: "call-papers",
+    component: CallPapersComponent,
+  },
   {
     path: "about-us",
     component: AboutUsComponent,
