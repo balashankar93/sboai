@@ -14,6 +14,8 @@ export class CallPapersComponent implements OnInit {
   onNavigate(url){
     // your logic here.... like set the url 
    // const url = 'https://zfrmz.in/0F2AEQXcnTMiQhqLJvcj';
-    window.open(url, '_blank');
+   // window.open(url, '_blank');
+
+   alert('Portal has been closed');
 }
 }

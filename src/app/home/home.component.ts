@@ -26,6 +26,12 @@ export class HomeComponent implements OnInit {
     FileSaver.saveAs(fileUrl, fileName);
   }
 
+  openAlert(){
+
+    alert("Portal has been closed");
+
+  }
+
   openModal() {
     const dialogConfig = new MatDialogConfig();
     // The user can't close the dialog by clicking outside its body
